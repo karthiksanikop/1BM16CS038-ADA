@@ -25,7 +25,7 @@ int minCoins(int coins[], int m, int V)
 } 
 
 int main() 
-{   int n;
+{   int n,V;
     cout<<"Enter Number of Denomination :";
     cin>>n;
     int coins[n];
@@ -34,7 +34,8 @@ int main()
          cin>>coins[i];
     //int coins[] =  {9, 6, 5, 1}; 
     int m = sizeof(coins)/sizeof(coins[0]); 
-    int V = 11; 
+    cout<<"Enter max value";
+    cin>>V; 
     cout << "Minimum coins required is "
          << minCoins(coins, n, V)<<endl; 
     return 0; 
